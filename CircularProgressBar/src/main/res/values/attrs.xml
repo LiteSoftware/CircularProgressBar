@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularProgressBar">
+        <attr name="outerArcWidth" format="dimension" />
+        <attr name="outerArcColor" format="color" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="smallPointSize" format="dimension" />
+        <attr name="bigPointSize" format="dimension" />
+        <attr name="progress" format="integer" />
+    </declare-styleable>
+
+</resources>
