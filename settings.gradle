@@ -1,6 +1,6 @@
 rootProject.name = 'CircularProgressBar'
 
-include ':CircularProgressBar'
+include ':CircularProgressBarLib'
 
 if (!System.env.JITPACK)
     include ':sample'
