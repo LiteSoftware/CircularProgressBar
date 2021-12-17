@@ -1,6 +1,8 @@
 # CircularProgressBar
     Circular progress bar is a simple, easy-to-use speedometer-like circular progress bar.
 
+[![](https://jitpack.io/v/LiteSoftware/CircularProgressBar.svg)](https://jitpack.io/#LiteSoftware/CircularProgressBar)
+
 <img src="screens/1_1.png" width="30%" /> <img src="screens/1_2.png" width="30%" /> <img src="screens/1_3.png" width="30%" />
 
 ## How to use
@@ -49,7 +51,7 @@ allprojects {
 
 Then add this dependency to your **module-level** `build.gradle` in `dependencies` section:
 ```groovy
-implementation 'com.github.test:CircularProgressBar:1.0'
+implementation 'com.github.LiteSoftware:CircularProgressBar:$version'
 ```
 
 ---
