@@ -1,5 +1,5 @@
 # CircularProgressBar
-Circular progress bar  это простой, легкий в использовании, напоминающий спедометр, круговой прогресс бар.
+    Circular progress bar is a simple, easy-to-use speedometer-like circular progress bar.
 
 <img src="screens/1_1.png" width="30%" /> <img src="screens/1_2.png" width="30%" /> <img src="screens/1_3.png" width="30%" />
 
@@ -28,7 +28,7 @@ Than find it in code and set progress:
 val circularProgress = findViewById<CircularProgressBar>(R.id.circular_progress)
 // you can set current progress value
 circularProgress.setProgress(value)
-// Вы можете задать значение прогресса без анимации
+// You can set the progress value without animation
 circularProgress.setProgressWithoutAnimation(value)
 // you can get progress value using following getter
 circularProgress.getProgress()
