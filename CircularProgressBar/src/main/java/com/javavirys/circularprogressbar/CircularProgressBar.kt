@@ -15,6 +15,7 @@
  */
 package com.javavirys.circularprogressbar
 
+import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
@@ -164,7 +165,7 @@ class CircularProgressBar
 
     fun getProgress() = pProgress
 
-    fun setProgress(progress: Int) {
+    fun setProgressWithoutAnimation(progress: Int) {
         if (progress != pProgress) {
             pProgress = when {
                 pProgress > 100 -> 100
@@ -172,6 +173,15 @@ class CircularProgressBar
                 else -> progress
             }
             invalidate()
+        }
+    }
+
+    fun setProgress(progress: Int) {
+        if (progress == pProgress) return
+        ValueAnimator.ofInt(pProgress, progress).apply {
+            addUpdateListener { setProgressWithoutAnimation(it.animatedValue as Int) }
+            duration = 600
+            start()
         }
     }
 }

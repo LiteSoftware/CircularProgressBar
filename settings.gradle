@@ -1,4 +1,6 @@
 rootProject.name = 'CircularProgressBar'
 
 include ':CircularProgressBar'
-include ':sample'
+
+if (!System.env.JITPACK)
+    include ':sample'
