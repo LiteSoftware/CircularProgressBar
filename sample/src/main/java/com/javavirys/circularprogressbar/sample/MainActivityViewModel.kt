@@ -36,7 +36,7 @@ class MainActivityViewModel : ViewModel() {
         viewModelScope.launch(Dispatchers.IO) {
             while (launchFlag) {
                 speedLiveData.postValue(Random.nextInt(0, 100))
-                delay(150)
+                delay(800)
             }
         }
     }
